@@ -13,25 +13,25 @@ jobs:
       PERSONA: developer
       RELEASE: minor
       MANIFEST_TYPE: yml
-      PROJECT_NAME: "devsecops-test/github-io-sample"
+      PROJECT_NAME: "Aliya55/github-io-sample"
       #SCM details
       SCM_TYPE: github
-      SCM_OWNER: devsecops-test
+      SCM_OWNER: Aliya55
       SCM_REPO_NAME: github-io-sample
       SCM_BRANCH_NAME: master
-      GITHUB_USERNAME: rahulguna10
+      GITHUB_USERNAME: Aliya55
       #Blackduck details
-      BLACKDUCK_SERVER_URL: https://bizdevhub.blackducksoftware.com
-      BLACKDUCK_PROJECT_NAME: "devsecops-test/github-io-sample:1.0"
-      BD_PROJECT_NAME: "devsecops-test/github-io-sample"
-      BLACKDUCK_PROJECT_VERSION: 1.0
+      BLACKDUCK_SERVER_URL: https://testing.blackduck.synopsys.com
+      BLACKDUCK_PROJECT_NAME: "github-io-samp:master"
+      BD_PROJECT_NAME: "github-io-samp"
+      BLACKDUCK_PROJECT_VERSION: master
       #Polaris details
-      POLARIS_SERVER_URL: "https://csprod.polaris.synopsys.com"
-      POLARIS_PROJECT_NAME: "sig-devsecops/github-io-sample"
-      POLARIS_BRANCH_NAME: origin/master
+      POLARIS_SERVER_URL: "https://sipse.polaris.synopsys.com/"
+      POLARIS_PROJECT_NAME: "github-io-samp"
+      POLARIS_BRANCH_NAME: master
       #CodeDX details
-      CODEDX_SERVER_URL: http://23.99.131.170:8080/codedx
-      CODEDX_PROJECT_ID: 1
+      CODEDX_SERVER_URL: https://poc23.codedx.synopsys.com/codedx
+      CODEDX_PROJECT_ID: 2
 
     steps:
     - task: Bash@3
