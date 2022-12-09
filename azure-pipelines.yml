@@ -13,7 +13,7 @@ jobs:
       PERSONA: developer
       RELEASE: minor
       MANIFEST_TYPE: yml
-      PROJECT_NAME: "Aliya55/github-io-sample"
+      PROJECT_NAME: "poc-test"
       #SCM details
       SCM_TYPE: github
       SCM_OWNER: Aliya55
