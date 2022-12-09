@@ -57,7 +57,7 @@ tool_information:
     project_name: <<POLARIS_PROJECT_NAME>>
     instance_url: <<POLARIS_SERVER_URL>>
     auth_token: "<<POLARIS_ACCESS_TOKEN>>"
-  enabled: "true"
+  enabled: true
 - tool_name: "coverity"
   fields:
     instance_url: "<<COVERITY_SERVER_URL>>"
