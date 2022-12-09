@@ -49,8 +49,8 @@ jobs:
             --blackduck.project.name="$(BLACKDUCK_PROJECT_NAME)" --blackduck.url="$(BLACKDUCK_SERVER_URL)" \
             --codedx.url="$(CODEDX_SERVER_URL)" --codedx.project.id="$(CODEDX_PROJECT_ID)" --codedx.api.key="$(CODEDX_API_KEY)"\
             ${ADDITIONALARGS}
-          export ${IS_SAST_ENABLED}=$(jq -r '.security.activities.sast.enabled' result.json)
-          export ${IS_SCA_ENABLED}=$(jq -r '.security.activities.sca.enabled' result.json)
+          export IS_SAST_ENABLED=$(jq -r '.security.activities.sast.enabled' result.json)
+          export IS_SCA_ENABLED=$(jq -r '.security.activities.sca.enabled' result.json)
           echo "##vso[task.setvariable variable=IS_SAST_ENABLED]$(jq -r '.security.activities.sast.enabled' result.json)"
           echo "##vso[task.setvariable variable=IS_SCA_ENABLED]$(jq -r '.security.activities.sca.enabled' result.json)"
           echo "================================ Raw IO Prescription ====================================="
