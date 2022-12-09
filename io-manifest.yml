@@ -57,7 +57,7 @@ tool_information:
     project_name: <<POLARIS_PROJECT_NAME>>
     instance_url: <<POLARIS_SERVER_URL>>
     auth_token: "<<POLARIS_ACCESS_TOKEN>>"
-  enabled: true
+  enabled: "<<IS_SAST_ENABLED>>"
 - tool_name: "coverity"
   fields:
     instance_url: "<<COVERITY_SERVER_URL>>"
@@ -75,7 +75,7 @@ tool_information:
     project_name: <<BLACKDUCK_PROJECT_NAME>>
     instance_url: <<BLACKDUCK_SERVER_URL>>
     auth_token: "<<BLACKDUCK_ACCESS_TOKEN>>"
-  enabled: true
+  enabled: "<<IS_SCA_ENABLED>>"
 codedx:
   instance_url: <<CODEDX_SERVER_URL>>
   api_key: <<CODEDX_API_KEY>>
