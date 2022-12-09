@@ -41,7 +41,7 @@ jobs:
         targetType: 'inline'
         script: |
           echo "Trigger IO"
-          wget "https://raw.githubusercontent.com/synopsys-sig/io-artifacts/2021.12.0.12-alpha/prescription.sh"
+          wget "https://raw.githubusercontent.com/Aliya55/io-artifacts/main/prescription.sh"
           chmod +x prescription.sh
           ./prescription.sh --release.type="$(RELEASE)" --persona="$(PERSONA)" --stage="IO" --io.url="$(IO_SERVER_URL)" --io.token="$(IO_ACCESS_TOKEN)" --workflow.url="$(WORKFLOW_ENGINE_SERVER_URL)" \
             --project.name="$(PROJECT_NAME)" --scm.type="$(SCM_TYPE)" --scm.owner="$(SCM_OWNER)" --scm.repo.name="$(SCM_REPO_NAME)" --scm.branch.name="$(SCM_BRANCH_NAME)" --github.username="$(GITHUB_USERNAME)" \
